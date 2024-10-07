@@ -3,12 +3,12 @@
     --font-base: 1rem;
     --clr-dark: rgb(0, 0, 0);
     --clr-light: rgb(255, 255, 255);
-    --clr-future: url(future.jpg);
-    --clr-retro: url(retro.jpg); 
+    --bgr-future: url(future.jpg);
+    --bgr-retro: url(retro.jpg); 
 }
 
 body {
-    background-image: var(--clr-retro);
+    background-image: var(--bgr-retro);
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
 }
 
 .future-mode {
-    background-image: var(--clr-future);
+    background-image: var(--bgr-future);
     color: var(--clr-light);
 }
 
@@ -214,6 +214,12 @@ nav ul li a:hover {
 @media only screen and (max-width: 390px){
     .Intro {
         font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .nav ,.navbot {
+        font-size: 0.8rem;
     }
 }
 
