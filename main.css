@@ -23,8 +23,6 @@ body {
     transition: color 0.2s;
 }
 
-
-
 .container {
     display: inline-block;
     top: 8%;
@@ -120,7 +118,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/*-----------------------------------------------About Me & My Projects-------------------------------------*/
+/*-----------------------------------------------About Me & My Projects & Certificates-------------------------------------*/
 .container1 {
     margin-top: 25vh;
     justify-content: center;
@@ -192,7 +190,6 @@ nav ul li a:hover {
 
     }
 }
-
 /*----------------------------------------------Home----------------------------------------------*/
 
 .Intro {
@@ -250,4 +247,3 @@ nav ul li a:hover {
         font-size: 0.8rem;
     }
 }
-
