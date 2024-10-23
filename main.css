@@ -1,6 +1,6 @@
 /*--------------------------------------All----------------------------------------*/
 
-/* Variablen */
+/* Variables */
 :root {
     --font-base: 1rem;
     --clr-dark: rgb(0, 0, 0);
@@ -9,7 +9,7 @@
     --bgr-retro: url(retro.jpg); 
 }
 
-/* Body Werte */
+/* Body values */
 body {
     background-image: var(--bgr-retro);
     min-height: 100%;
@@ -26,7 +26,7 @@ body {
     transition: color 0.2s;
 }
 
-/* Icon Werte */
+/* Icon values */
 .container {
     display: inline-block;
     top: 8%;
@@ -35,39 +35,39 @@ body {
     z-index: 999;
 }
 
-/* Futuremode Werte */
+/* Futuremode values */
 .future-mode {
     background-image: var(--bgr-future);
     color: var(--clr-light);
 }
 
-/* Icon toggled mit pointer */
+/* Cursor changes to pointer when hovering over the container */
 .toggle-container {
     cursor: pointer;
 }
 
-/* future icon wird in Retromode nicht angezeigt & Werte*/
+/* future icon is not shown in retromode & values*/
 .futureicon {
     display: none;
     color: white;
 }
 
-/* retro icon Werte */
+/* retro icon values */
 .retroicon {
     color: white;
 }
 
-/* retro icon wird in Futuremode nicht angezeigt */
+/* retro icon is not shown in futuremode */
 .future-mode .retroicon {
     display: none;
 }
 
-/* Position von future icon in Futuremode */
+/* Position of future icon in Futuremode */
 .future-mode .futureicon {
     display: inline-block;
 }
 
-/* Nav Bar Werte */
+/* Nav Bar values */
 .nav {
     background-color: rgb(0, 0, 0);
     position: fixed;
@@ -76,7 +76,7 @@ body {
     z-index: 999;
 }
 
-/*  */
+/* Nav style and negation of default settings */
 .nav ul {
     list-style-type: none;
     margin: 0;
@@ -84,12 +84,12 @@ body {
     overflow: hidden;
 }
 
-/*  */
+/* The items float to the right */
 .nav ul li {
     float: right;
 }
 
-/*  */
+/* Nav bar item values */
 .nav ul li a {
     display: block;
     color: white;
@@ -98,16 +98,17 @@ body {
     text-decoration: none;
 }
 
-/* Wenn ein Cursor über ein Seitenlink hovered wird es eingefärbt */
+/* Hovering over an item causes it to change color */
 nav ul li a:hover {
     background-color: rgb(148, 55, 125);
 }
 
-/* Den Aktuellen Seitenlink wird eingefärbt */
+/* The current link is colored in */
 .active {
     background-color: rgb(148, 55, 125);
 }
 
+/* Footer values */
 .footer{
     background-color: rgb(0, 0, 0);
     position: fixed;
@@ -118,30 +119,34 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
+/* Color, size and margin of the footer text */
 .footer .row{
     color:gray;
     font-size:0.8em;
     margin: 0.8%;
 }
 
+/* The links have no text decoration and the transition time for the hover function */
 .footer .row a{
     text-decoration:none;
     color:gray;
     transition:0.5s;
 }
 
+/* The links are colored differently when hovering over them */
 .footer .row a:hover{
     color:rgb(255, 255, 255);
 }
 
+/* Margin and display style of the footer */
 .footer .row ul li{
     display: inline-block;
     margin: 0.2%;
 }
-/*-----------------------------------------------About Me & My Projects & Certificates-------------------------------------*/
+/*------------------------------------About Me & My Projects & Certificates-------------------------------------*/
 
-/*  */
-.container1 {
+/* doubleGrid values */
+.doubleGrid {
     margin-top: 25vh;
     justify-content: center;
     display: grid;
@@ -150,8 +155,8 @@ nav ul li a:hover {
     padding-bottom: 10vh;
 }
 
-/*  */
-.container2 {
+/* singleGrid values */
+.singleGrid {
     margin-top: 25vh;
     justify-content: center;
     display: grid;
@@ -160,7 +165,7 @@ nav ul li a:hover {
     padding-bottom: 10vh;
 }
 
-/*  */
+/* box values */
 .box {
     background-color: rgb(255, 68, 204);
     border: 4px solid rgba(0, 0, 0, 0.8);
@@ -171,56 +176,54 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
-/*  */
+/* changes scale and opacity when hovering over box */
 .box:hover {
     transform: scale(1.1, 1.1);
     transform-origin: center;
     opacity: 1;
 }
 
-/*  */
+/* Responsive Design for doubleGrid and singleGrid */
 @media only screen and (max-width: 1300px){
-    .container1 {
+    .doubleGrid {
         grid-template-columns: repeat(1, 600px);
     }
 }
 
-/*  */
 @media only screen and (max-width: 660px){
-    .container1 {
+    .doubleGrid {
         grid-template-columns: repeat(1, 400px);
     }
 }
 
-/*  */
 @media only screen and (max-width: 460px){
-    .container1 {
+    .doubleGrid {
         grid-template-columns: repeat(1, 300px);
 
     }
 }
 
 @media only screen and (max-width: 1300px){
-    .container2 {
+    .singleGrid {
         grid-template-columns: repeat(1, 600px);
     }
 }
 
 @media only screen and (max-width: 660px){
-    .container2 {
+    .singleGrid {
         grid-template-columns: repeat(1, 400px);
     }
 }
 
 @media only screen and (max-width: 460px){
-    .container2 {
+    .singleGrid {
         grid-template-columns: repeat(1, 300px);
 
     }
 }
 /*----------------------------------------------Home----------------------------------------------*/
 
-/*  */
+/* Intro values */
 .Intro {
     margin-top: 25vh;
     align-items: center;
@@ -231,7 +234,7 @@ nav ul li a:hover {
     font-size: 4rem;
 }
 
-/*  */
+/* Responsive Design for different display sizes */
 @media only screen and (max-width: 1500px){
     .Intro {
         font-size: 3rem;
@@ -239,7 +242,6 @@ nav ul li a:hover {
     }
 }
 
-/*  */
 @media only screen and (max-width: 1150px){
     .Intro {
         font-size: 2.5rem;
@@ -247,7 +249,6 @@ nav ul li a:hover {
     }
 }
 
-/*  */
 @media only screen and (max-width: 950px){
     .Intro {
         font-size: 2rem;
@@ -255,30 +256,26 @@ nav ul li a:hover {
     }
 }
 
-/*  */
 @media only screen and (max-width: 750px){
     .Intro {
         font-size: 1.5rem;
     }
 }
 
-/*  */
 @media only screen and (max-width: 570px){
     .Intro {
         font-size: 1rem;
     }
 }
 
-/*  */
 @media only screen and (max-width: 390px){
     .Intro {
         font-size: 0.9rem;
     }
 }
 
-/*  */
 @media only screen and (max-width: 450px){
-    .nav ,.navbot {
+    .nav {
         font-size: 0.8rem;
     }
 }
