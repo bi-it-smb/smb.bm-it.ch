@@ -6,7 +6,7 @@
     --clr-dark: rgb(0, 0, 0);
     --clr-light: rgb(255, 255, 255);
     --bgr-future: url(future.jpg);
-    --bgr-retro: url(retro.jpg); 
+    --bgr-retro: url(space.jpg); 
 }
 
 /* Body values */
@@ -167,7 +167,7 @@ nav ul li a:hover {
 
 /* box values */
 .box {
-    background-color: rgb(255, 68, 204);
+    background-color: rgb(255, 144, 191);
     border: 4px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
@@ -228,7 +228,7 @@ nav ul li a:hover {
     margin-top: 25vh;
     align-items: center;
     text-align: center;
-    color: rgb(255, 133, 239);
+    color: rgb(255, 144, 191);
     mix-blend-mode: difference;
     
     font-size: 4rem;
