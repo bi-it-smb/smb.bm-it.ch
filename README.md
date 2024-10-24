@@ -25,8 +25,5 @@ This website serves as a portfolio to display facts about me, my skills and my p
 ## Contact
 If you have any questions or feedback, feel free to reach out to me at benjamin.smith@espas.ch
 
-<<<<<<< HEAD
 Thank you for your curiosity and time!
-=======
-Thank you for your curiosity and time!
->>>>>>> d9fdcbbc20f5d74ff53cbd0d9c7380d447021f76
+
