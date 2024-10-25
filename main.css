@@ -100,11 +100,21 @@ body {
 
 /* Hovering over an item causes it to change color */
 nav ul li a:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+/* Changes navbar hover color in future-mode */
+.future-mode nav ul li a:hover {
     background-color: rgb(148, 55, 125);
 }
 
 /* The current link is colored in */
 .active {
+    background-color: rgb(99, 99, 99);
+}
+
+/* Changes the color of the current link in the navbar */
+.future-mode .active {
     background-color: rgb(148, 55, 125);
 }
 
