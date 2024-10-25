@@ -167,13 +167,18 @@ nav ul li a:hover {
 
 /* box values */
 .box {
-    background-color: rgb(255, 144, 191);
+    background-color: rgb(250, 182, 101);
     border: 4px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
     box-shadow: 10px 10px 5px rgb(0, 0, 0);
     transition: 0.3s;
     opacity: 0.8;
+}
+
+/* box color changes in future-mode */
+.future-mode .box {
+    background-color: rgb(40, 51, 130);
 }
 
 /* changes scale and opacity when hovering over box */
