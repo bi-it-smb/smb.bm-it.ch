@@ -8,6 +8,7 @@ Welcome to my project! This is the first website that I have ever made. In this 
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Contact](#contact)
+- [Link to Website](#link-to-website)
 
 ## Introduction
 This website serves as a portfolio to display facts about me, my skills and my projects. It is a learning project that helped me understand the basics of HTML, CSS, and JavaScript.
@@ -24,6 +25,9 @@ This website serves as a portfolio to display facts about me, my skills and my p
 
 ## Contact
 If you have any questions or feedback, feel free to reach out to me at benjamin.smith@espas.ch
+
+## Link to Website
+The link to my website is smb.bm-it.ch
 
 Thank you for your curiosity and time!
 
