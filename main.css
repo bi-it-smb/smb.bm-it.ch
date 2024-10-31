@@ -83,6 +83,20 @@ body {
     z-index: 999;
 }
 
+/* Switch turns vertical at a certain screen width */
+@media only screen and (max-width: 1460px){
+    .switch {
+        height: 60px;
+        width: 34px;
+    }
+
+    .future-mode .slider::before {
+        -webkit-transform: translateY(-26px);
+        -ms-transform: translateY(-26px);
+        transform: translateY(-26px);
+    }
+}
+
 /* Futuremode values */
 .future-mode {
     background-image: var(--bgr-future);
