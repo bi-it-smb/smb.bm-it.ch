@@ -27,7 +27,7 @@ This website serves as a portfolio to display facts about me, my skills and my p
 If you have any questions or feedback, feel free to reach out to me at benjamin.smith@espas.ch
 
 ## Link to Website
-The link to my website is smb.bm-it.ch
+The link to my website is [smb.bm-it.ch](https://smb.bm-it.ch/)
 
 Thank you for your curiosity and time!
 
