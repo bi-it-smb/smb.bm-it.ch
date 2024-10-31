@@ -26,10 +26,58 @@ body {
     transition: color 0.2s;
 }
 
-/* Icon values */
-.container {
+/* Switch values */
+.switch {
+    position: relative;
     display: inline-block;
-    top: 8%;
+    width: 60px;
+    height: 34px;
+}
+
+/* Slider values */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: rgb(161, 161, 161);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* Slider Transition Values */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* Slider background color in future-mode */
+.future-mode .slider {
+    background-color: rgb(148, 55, 125);
+}
+
+/* Slider transformation when switching to future-mode */
+.future-mode .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Icon values */
+.container .switch{
+    display: inline-block;
+    top: 10%;
     margin-left: 3vh;
     position: fixed;
     z-index: 999;
@@ -39,32 +87,6 @@ body {
 .future-mode {
     background-image: var(--bgr-future);
     color: var(--clr-light);
-}
-
-/* Cursor changes to pointer when hovering over the container */
-.toggle-container {
-    cursor: pointer;
-}
-
-/* future icon is not shown in retromode & values*/
-.futureicon {
-    display: none;
-    color: white;
-}
-
-/* retro icon values */
-.retroicon {
-    color: white;
-}
-
-/* retro icon is not shown in futuremode */
-.future-mode .retroicon {
-    display: none;
-}
-
-/* Position of future icon in Futuremode */
-.future-mode .futureicon {
-    display: inline-block;
 }
 
 /* Nav Bar values */
@@ -113,13 +135,13 @@ nav ul li a:hover {
     background-color: rgb(99, 99, 99);
 }
 
-/* Changes the color of the current link in the navbar */
+/* Changes the color of the current link in the navbar in future-mode*/
 .future-mode .active {
     background-color: rgb(148, 55, 125);
 }
 
 /* Footer values */
-.footer{
+.footer {
     background-color: rgb(0, 0, 0);
     position: fixed;
     width: 100%;
@@ -130,26 +152,26 @@ nav ul li a:hover {
 }
 
 /* Color, size and margin of the footer text */
-.footer .row{
+.footer .row {
     color:gray;
     font-size:0.8em;
     margin: 0.8%;
 }
 
 /* The links have no text decoration and the transition time for the hover function */
-.footer .row a{
+.footer .row a {
     text-decoration:none;
     color:gray;
     transition:0.5s;
 }
 
 /* The links are colored differently when hovering over them */
-.footer .row a:hover{
+.footer .row a:hover {
     color:rgb(255, 255, 255);
 }
 
 /* Margin and display style of the footer */
-.footer .row ul li{
+.footer .row ul li {
     display: inline-block;
     margin: 0.2%;
 }
